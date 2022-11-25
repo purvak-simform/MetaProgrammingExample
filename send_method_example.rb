@@ -1,3 +1,4 @@
+# ruby send_method_examle.rb
 class SendTestExample
   attr_accessor :name, :goal, :contact
 
@@ -12,10 +13,11 @@ end
 
 object1 = SendTestExample.new
 object1.name = "Hello"
-# this is equivalulent to 
+# this is equivalulent to  
 # object1.send("name=", "HelloWorld")
 puts object1
 
+# when we want to set bulk data then using send method within the loop
 
 # class SendTestExample
 #   attr_accessor :name, :contact, :goal
